@@ -3,5 +3,16 @@
   (check-type n (integer 0 *))
   (if (< n 2) n
       (+ (fibonacci (1- n)) (fibonacci (- n 2)))))
+
+(defun factorial (n)
+  (if (= n 1)              
+      1                           
+      (* n (factorial (- n 1))))) 
+
+
 (write "Termino n de la serie fibonacci")
 (print (fibonacci (read)))
+(terpri)
+(terpri)
+(write "Factorial de un numero")
+(print (factorial (read)))
