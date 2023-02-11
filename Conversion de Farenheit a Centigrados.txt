@@ -1,0 +1,6 @@
+(defun conversion (C)
+    (+ (* C 1.8) 32)
+)
+
+
+(write (conversion (read)))
