@@ -1,0 +1,7 @@
+(defun fibonacci (n)
+  "Proceso recursivo del termino n de la serie fibonacci"
+  (check-type n (integer 0 *))
+  (if (< n 2) n
+      (+ (fibonacci (1- n)) (fibonacci (- n 2)))))
+(write "Termino n de la serie fibonacci")
+(print (fibonacci (read)))
