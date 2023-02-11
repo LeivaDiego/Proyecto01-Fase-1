@@ -1,5 +1,14 @@
-(defun conversion (C)
-    (+ (* C 1.8) 32)
+(defun conversion (ftemp)
+    (let 
+  		(  	
+         	(ctemp (* (- ftemp 32) 5/9))
+		)
+     (format t 
+            "~%~s°F son equivalentes a:  ~s°C~%"
+			ftemp
+            (float ctemp)
+		)
+    )
 )
 
 
